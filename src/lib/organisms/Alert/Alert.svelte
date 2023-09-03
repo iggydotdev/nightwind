@@ -2,12 +2,17 @@
   export let dismissable, heading, content;
 </script>
 
-<div>
+<div class="alert">
   {#if dismissable}
-  <a class="uk-alert-close" uk-close></a>
+  <button class="alert-close">X</button>
   {/if}
-  <h3>{heading}</h3>
-  <p>{content}</p>
+  <h3 class="alert-heading">{heading}</h3>
+  <p class="alert-content">{content}</p>
 </div>
 
 
+<style>
+
+  
+
+</style>

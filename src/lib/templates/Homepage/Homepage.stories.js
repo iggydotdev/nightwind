@@ -5,13 +5,13 @@ export default {
   title: 'Templates/Homepage',
   component: Homepage,
   //tags: ['autodocs'],
-  argTypes: {
+  // argTypes: {
     // backgroundColor: { control: 'color' },
     // size: {
     //   control: { type: 'select' },
     //   options: ['small', 'medium', 'large'],
     // },
-  },
+  //},
 }; 
 
 // More on writing stories with args: https://storybook.js.org/docs/svelte/writing-stories/args
