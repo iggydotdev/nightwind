@@ -9,7 +9,16 @@
 
 
 
-<div class='accordion-header' on:click={toggle} aria-expanded={isExpanded}>{title}</div>
-{#if isExpanded === true }
+<details class='accordion-header'>
+  <summary>{title}</summary>
+  {#if content}
   <div class='accordion-content'>{content}</div>
-{/if}
+  {:else}
+  <div class='accordion-content'> <slot/></div>
+  {/if}
+</details>
+
+<style>
+  details > summary { transition: color 1s; color: black;}
+  details[open] > summary { color: red;}
+ </style>
