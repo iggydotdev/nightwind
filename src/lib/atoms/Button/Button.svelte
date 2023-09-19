@@ -2,19 +2,7 @@
   /**
    * @type {string}
    */
-  export let as; 
-  /**
-	 * @type {any}
-	 */
-   export let url;
-  /**
-	 * @type {()=>void}
-	 */
-   export let cb;
-  /**
-	 * @type {any}
-	 */
-  export let content;
+  export let as, url, cb, content;
 </script>
 
 {#if as === 'anchor'}
